@@ -51,20 +51,12 @@ public class MyMain {
 
 
 
-
-    //  Takes in two Strings as input and returns a String equal to those two Strings added
-    //  together in alphabetic order.
-    public static String stringOrder(String str1, String str2) {
-        return "";
-    }
-
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         // You should test inputDouble yourself!
         double d = inputDouble();
-
+        /*
         // Some code to test numQuarters
         System.out.println("\nnumQuarters tests:");
         System.out.println("1.25 in quarters would be: " + numQuarters(1.25) + " quarters."); // 5
@@ -76,7 +68,7 @@ public class MyMain {
         System.out.println("1.20 in dimes would be: " + numDimes(1.20) + " dimes."); // 12
         System.out.println("120.13 in dimes would be: " + numDimes(120.13) + " dimes."); //1201
         System.out.println("150.25 in dimes would be: " + numDimes(150.25) + " dimes."); //1502
-
+        */
         scan.close();
     }
 }
