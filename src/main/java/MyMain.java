@@ -8,25 +8,44 @@ public class MyMain {
     // scan.nextDouble() might be useful here
     public static double inputDouble() {
         Scanner scan = new Scanner(System.in);
-        // REPLACE THIS WITH YOUR CODE
-
-        return -1.0;
+        System.out.println("Please input a number between 0.0 and 1000000.0");
+        double input = scan.nextDouble();
+        if (input>0.0 && input<=1000000.0){
+           return input;
+        }
+        else{
+            while (input<0.0 || input>1000000.0){
+                System.out.println("Please input a number between 0.0 and 1000000.0");
+                input = scan.nextDouble();
+            }
+            return input;
+        }
     }
 
     // Takes a double money as input and returns the number of quarters that we
     // can return in change
     // You should use a while loop!
     public static int numQuarters(double money) {
-        // REPLACE THIS WITH YOUR CODE
-        return 0;
+        int count = 0;
+        double monies = money;
+        while (monies>0.25 || Math.abs(monies-0.25) < 0.00001) {
+            monies = monies - 0.25;
+            count++;
+        }
+        return count;
     }
 
     // Takes a double money as input and returns the number of dimes that we
     // can return in change
     // You should use a while loop!
     public static int numDimes(double money) {
-        // REPLACE THIS WITH YOUR CODE
-        return 0;
+        int count = 0;
+        double monies = money;
+        while (monies>0.10) {
+            monies = monies - 0.10;
+            count++;
+        }
+        return count;
     }
 
 
